@@ -162,7 +162,7 @@ public final class ActiveStorm {
         if (cfg.phase1AbsorbEnabled) {
             if (--absorbTimer <= 0) {
                 absorbTimer = cfg.phase1AbsorbInterval;
-                absorbBlocks();
+                absorbBlocksPhase1();
             }
         }
         updateFloatingBlocks();
